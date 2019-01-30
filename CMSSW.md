@@ -72,6 +72,7 @@ cp ../slc7_amd64_gcc700/cms/cmssw-tool-conf/45.0-cms/tools/selected config/toolb
 scram setup
 cmsenv
 git cms-addpkg <Package that you want to build>
+// Copy module.modulemap under src/ if you want
 scram b -j 10
 // Wait for 3 hours
 scram b -k -j 8  runtests // Run tests
