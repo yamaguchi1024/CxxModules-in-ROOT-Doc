@@ -8,9 +8,12 @@ This is a repository to collect all knowledge about C++ modules while I was doin
 Please read TCling.md first if you're new to ROOT and C++ Modules.
 
 ### Table of contents
-- Available online documents
-   - Publications of ROOT C++ Modules
-
+- [Available online documents](https://github.com/yamaguchi1024/cxxmodule-doc#available-online-documents)
+   - [Publications of ROOT C++ Modules](https://github.com/yamaguchi1024/cxxmodule-doc#publications-of-root-c-modules)
+   - [Resources for C++ Modules in general](https://github.com/yamaguchi1024/cxxmodule-doc#resources-for-c-modules-in-general)
+   - [Resources for ROOT](https://github.com/yamaguchi1024/cxxmodule-doc#resources-for-root)
+- [Features that Interpreter needs to support](https://github.com/yamaguchi1024/cxxmodule-doc#features-that-interpreter-needs-to-support)
+- [Useful vocabraries](https://github.com/yamaguchi1024/cxxmodule-doc#useful-vocabraries)
 
 ### Available online documents
 #### Publications of ROOT C++ Modules
