@@ -68,7 +68,7 @@ Successfully built cmssw-tool-conf? Congrats! Then we can finally build CMSSW!
 ```
 cd <directory that you created at step 6>
 source /cvmfs/cms.cern.ch/cmsset_default.sh
-scram -a slc7_amd64_gcc700 list CMSSW_10_5_CXXMODULE_X_
+scram -a slc7_amd64_gcc700 list CMSSW_10_6_CXXMODULE_X_
 // Pick one IB from the list
 scram -a slc7_amd64_gcc700 p <IB that you picked>
 cd CMSSW_IB_YOU PICKED
