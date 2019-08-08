@@ -31,7 +31,9 @@ Those spec files are the configuration of CMake, basically. Add `-Druntime_cxxmo
 ```
 // Normally
 singularity shell -B /afs -B /cvmfs -B /build -B /afs/cern.ch:/afs/cern.ch docker://cmssw/cc7:latest
-
+// In case you do not have 50 GB afs space.
+export SINGULARITY_CACHEDIR="/tmp/$(whoami)/singularity"
+singularity shell -B /afs -B /build/$(whoami) -B /cvmfs docker://cmssw/cc7:latest
 // When you want to run benchmark with a grid certificate
 singularity shell -B /afs -B /cvmfs -B /build -B /afs/cern.ch:/afs/cern.ch docker://cmssw/cc7:latest
 voms-proxy-init2 --rfc --voms cms
