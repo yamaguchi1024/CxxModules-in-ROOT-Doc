@@ -24,7 +24,7 @@ git clone https://github.com/cms-sw/pkgtools
 cd cmsdist
 vim root.spec root-toolfile.spec
 ```
-Those spec files are the configuration of CMake, basically. Add `-Druntime_cxxmodule=On` or do whatever you want.
+Those spec files are the configuration of CMake, basically. Add `-Druntime_cxxmodules=On` or do whatever you want.
 
 5. Go to singularity
 
