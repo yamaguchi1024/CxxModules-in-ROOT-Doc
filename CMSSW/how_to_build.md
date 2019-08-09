@@ -43,7 +43,9 @@ If it doesn't work, modify -B randomly and it will work.
 6. Build cmssw-tool-conf (external packages)
 
 ```
-./pkgtools/cmsBuild -a slc7_amd64_gcc700 --repo cms.week0 -c ./cmsdist -i <directory name that you want to create> -j 16 build cmssw-tool-conf &
+WEEK=$(ls -dt /cvmfs/cms-ib.cern.ch/nweek-* | head -n1 | tr -dc '0-9')
+
+./pkgtools/cmsBuild -a slc7_amd64_gcc700 --repo cms.week$((10#$WEEK%2)) -c ./cmsdist -i <directory name that you want to create> -j 16 build cmssw-tool-conf &
 Wait for 3 hours
 cd <directory you created>
 source slc7_amd64_gcc700/lcg/root/6.17.01-cms/bin/thisroot.sh
